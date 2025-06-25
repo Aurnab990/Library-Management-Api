@@ -63,6 +63,25 @@ booksRoute.get("/books/:bookId", async (req: Request, res: Response) => {
 
 });
 
+// GET SINGLE DATA BY FILTER
+// booksRoute.get("/books", async (req: Request, res: Response) => {
+//     try{
+//         const filterBooks = await Book.find({ genre : "SCIENCE"});
+//         console.log(filterBooks)
+//         res.status(201).json({
+//             success: true,
+//             message: "Books retrieved successfully",
+//             data: books,
+//         });
+//     } catch(error){
+//         res.status(400).json({
+//             success: false,
+//             message: "failed to fetch data",
+//             error: error.message
+//         });
+//     };
+// });
+
 // UPDATE A SINGLE DATA
 booksRoute.patch("/books/:bookId", async (req: Request, res: Response) => {
     try {
