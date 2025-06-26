@@ -29,6 +29,13 @@ Check out the walkthrough video:
 
 ---
 
+## 🛠️ Tech Stack
+- Backend: Node.js, Express.js
+- Language: TypeScript
+- Database: MongoDB with Mongoose
+- Hosting: Vercel
+- API Testing: Postman
+
 ## 🚀 API Endpoints
 
 ### 📚 Books
@@ -83,3 +90,8 @@ Content-Type: application/json
   "quantity": 2,
   "dueDate": "2025-07-18T00:00:00.000Z"
 }
+```
+## 🧑‍💻 Developer
+
+Built with 💻 and ☕ by Aurnab_Das
+Feel free to fork, clone, or contribute!
