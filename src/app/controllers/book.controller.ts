@@ -161,7 +161,7 @@ booksRoute.get("/borrow", async (req: Request, res: Response) => {
             },
             {
                 $lookup: {
-                    from: "books", // must match your MongoDB collection name (lowercase plural)
+                    from: "books",
                     localField: "_id",
                     foreignField: "_id",
                     as: "book"
