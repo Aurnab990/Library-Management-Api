@@ -81,13 +81,13 @@ booksRoute.get("/books/:bookId", async (req: Request, res: Response) => {
 });
 
 // UPDATE A SINGLE DATA
-booksRoute.patch("/books/:bookId", async (req: Request, res: Response) => {
+booksRoute.put("/books/:bookId", async (req: Request, res: Response) => {
     try {
         const bookId = req.params.bookId;
         const updatedBody = req.body;
         const book = await Book.findByIdAndUpdate(bookId, updatedBody, { new: true });
 
-        res.status(201).json({
+        res.status(200).json({
             "success": true,
             "message": "Book updated successfully",
             "data": book
